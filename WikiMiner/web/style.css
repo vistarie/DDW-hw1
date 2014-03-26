@@ -1,0 +1,64 @@
+/* 
+    Document   : style
+    Created on : 23.3.2014, 2:06:20
+    Author     : Martina
+
+*/
+
+body{
+font-family: Verdana, Arial;
+background: #d8f1ff;
+background-image: url(images/map.jpg);
+background-repeat: no-repeat;
+background-position: center top;
+}
+
+h1{
+    text-align: center;
+}
+
+#main{
+    padding:20px;
+    width:800px;
+    margin: 0 auto;
+    background-color: rgba(255,255,255,0.8);
+    color: #00478E;
+    min-height: 400px;
+}
+
+#content{
+    text-align: center;
+    min-height:300px;
+
+}
+
+.column{
+    padding-bottom: 10px;
+    margin-top: 10px;
+    border-bottom: 1px solid grey;
+}
+
+.return{
+    text-align: center;
+width: 70px;
+background: #a1dbff;
+line-height: 35px;
+margin: 0 auto;
+}
+
+.return a{
+    text-decoration: none;
+}
+
+input[type=text]{
+    width:500px;
+}
+
+input[type=submit]{
+    margin-top: 10px;
+    line-height:35px;
+    width:50px;
+    background-color:#a1dbff;
+    border:none;
+    cursor:pointer;
+}

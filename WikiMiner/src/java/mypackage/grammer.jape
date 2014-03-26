@@ -1,0 +1,32 @@
+Phase: FindPhase
+Input: Lookup
+Options: control = brill
+ 
+Rule: FindCountry
+(
+  {Lookup.minorType == "country"}
+):reference1
+-->
+ :reference1.Country = { rule= "FindCountry" }
+
+Rule: FindCompany
+(
+  {Lookup.minorType == "company"}
+):reference2
+-->
+ :reference2.Company = { rule= "FindCompany" }
+
+Rule: FindCity
+(
+  {Lookup.minorType == "city"}
+):reference3
+-->
+ :reference3.City = { rule= "FindCity" }
+
+Rule: FindBuilding
+(
+  {Lookup.minorType == "building"}
+):reference4
+-->
+ :reference4.Building = { rule= "FindBuilding" }
+
